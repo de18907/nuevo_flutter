@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vscode/src/pages/contador_page.dart';
 import 'package:flutter_vscode/src/pages/login.dart';
-import 'package:flutter_vscode/src/pages/noticia.dart';
 
 class MyApp0 extends StatelessWidget {
   @override
@@ -30,7 +29,7 @@ class MyApp2 extends StatelessWidget {
   Widget build(context) {
     return MaterialApp(
       home: Center(
-        child: Noticia(),
+        child: MyApp2(),
       ),
     );
   }
