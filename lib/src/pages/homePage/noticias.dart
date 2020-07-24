@@ -11,7 +11,7 @@ const swatch_5 = Color(0xff363cb0);
 const swatch_6 = Color(0xff09090a);
 const swatch_7 = Color(0xff25255b);
 
-class Noticia extends StatelessWidget {
+class Homepage extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class Noticia extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Ultimas'),
+      home: MyHomePage(title: 'Samto Domingo Oeste'),
     );
   }
 }

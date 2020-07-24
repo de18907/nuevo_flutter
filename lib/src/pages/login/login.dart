@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vscode/src/app.dart';
 import 'package:flutter_vscode/src/pages/login/FadeAnimation.dart';
 
 class Login extends StatelessWidget {
@@ -113,7 +114,30 @@ class Login extends StatelessWidget {
                               ),
                             )),
                         SizedBox(
-                          height: 20,
+                          height: 10,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 16.0),
+                              child: RaisedButton(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: new BorderRadius.circular(30.0),
+                                ),
+                                onPressed: () {
+                                  runApp(MyApp2());
+                                },
+                                color: Colors.blue[700],
+                                padding: EdgeInsets.only(
+                                    left: 70, right: 70, top: 15, bottom: 15),
+                                child: Text('Iniciar sección',
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20)),
+                              ),
+                            )),
+                        SizedBox(
+                          height: 0,
                         ),
                         FadeAnimation(
                             1.5,
@@ -122,38 +146,29 @@ class Login extends StatelessWidget {
                               style: TextStyle(color: Colors.grey[600]),
                             )),
                         SizedBox(
-                          height: 30,
-                        ),
-                        FadeAnimation(
-                            1.6,
-                            Container(
-                              height: 50,
-                              margin: EdgeInsets.symmetric(horizontal: 50),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                  color: Colors.blue[700]),
-                              child: Center(
-                                child: Text(
-                                  "Iniciar sesión",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                  ),
-                                ),
-                              ),
-                            )),
-                        SizedBox(
-                          height: 10,
+                          height: 0,
                         ),
                         FadeAnimation(
                             1.7,
-                            Text(
-                              "Registrate",
-                              style: TextStyle(color: Colors.blue[700]),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 16.0),
+                              child: RaisedButton(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: new BorderRadius.circular(20.0),
+                                ),
+                                onPressed: () {
+                                  runApp(MyApp1());
+                                },
+                                color: Colors.white,
+                                padding: EdgeInsets.only(
+                                    left: 25, right: 25, top: 10, bottom: 10),
+                                child: Text('Registrarte',
+                                    style: TextStyle(color: Colors.blue[800])),
+                              ),
                             )),
                         SizedBox(
-                          height: 30,
+                          height: 0,
                         ),
                         Row(
                           children: <Widget>[

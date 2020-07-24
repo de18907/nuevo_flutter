@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_vscode/src/pages/Noticia/noticias.dart';
+import 'package:flutter_vscode/src/pages/login/incidentes.dart';
+import 'package:flutter_vscode/src/pages/login/input_page.dart';
 import 'package:flutter_vscode/src/pages/login/login.dart';
-import 'package:flutter_vscode/src/pages/prueba/contador_page.dart';
 
 class MyApp0 extends StatelessWidget {
   @override
@@ -21,19 +21,19 @@ class MyApp1 extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Center(
-        child: Nuevo(),
+        child: InputPage(),
       ),
     );
   }
 }
 
-class Pruebas extends StatelessWidget {
+class MyApp2 extends StatelessWidget {
   @override
   Widget build(context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Center(
-        child: Noticia(),
+        child: Incidencia(),
       ),
     );
   }
